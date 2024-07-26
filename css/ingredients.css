@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    background-image: url(../assets/bg4.jpeg);
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color:  #A47148;
+}
+
+.navbar h1{
+    font-size: 20px;
+    font-family: "Acme", sans-serif;
+    color: #c4af89;
+}
+
+.navbar a {
+    color: #fff1d8;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+.navbar a:hover {
+    color: #553517;
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-family: "Acme", sans-serif;
+    font-size: 35px;
+}
+
+.ingredients{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.ingredients div{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ccaf88e7;
+    /* background-color: #8d7454b6; */
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 3px 3px 3px #664b1a9c;
+}
+
+h4{
+    text-align: center;
+    justify-content: center;
+}
+
+.ingredients p{
+    text-indent: 2em;
+    line-height: 1.3;
+}
+
+
+@media screen and (max-width:725px) {
+    .ingredients{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width:665px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width:546px) {
+
+    .navbar{
+        padding: 10px 30px;
+
+    }
+    
+    .title {
+        margin-top: 140px;
+        margin-bottom: 40px;
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .navbar a {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .navbar a {
+        padding: 2px;
+        margin-right: 10px;
+    }
+
+    .ingredients div{
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .navbar a {
+        padding: -20px;
+        margin-right: 5px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:353px) {
+    .navbar{
+        padding-left: 1px;
+    }
+
+    .navbar h1{
+        font-size: 20px;
+        font-family: "Acme", sans-serif;
+        color: #c4af89;
+    }
+    
+    .navbar a {
+        color: #fff1d8;
+        text-decoration: none;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+}
+
+@media screen and (max-width:318px) {
+    .navbar{
+        padding-left: 2px;
+    }
+
+    .navbar h1{
+        font-size: 20px;
+        font-family: "Acme", sans-serif;
+        color: #c4af89;
+    }
+    
+    .navbar a {
+        font-size: 13px;
+        margin-right: 8px;
+    }
+}
